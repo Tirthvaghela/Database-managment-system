@@ -1,0 +1,14 @@
+SHOW DATABASE;
+use im22B114;
+CREATE TABLE student(
+    id INT,
+    name VARCHAR(30),
+    phone VARCHAR(20),
+    city VARCHAR(40)
+    );
+SHOW TABLES;
+DESCRIBE student;
+SELECT * FROM student;
+RENAME TABLE student TO student_info;
+CREATE TABLE student AS SELECT * FROM student_info;
+DROP TABLE student;
